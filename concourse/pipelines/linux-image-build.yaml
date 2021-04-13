@@ -162,7 +162,7 @@ jobs:
       wf: "enterprise_linux/almalinux_8.wf.json"
       gcs_url: ((.:gcs-url))
       iso: ((iso-paths.almalinux-8))
-      google_cloud_repo: "stable"
+      google_cloud_repo: "staging"
       build_date: ((.:build-date))
 # centos
 - name: build-centos-7
@@ -192,7 +192,7 @@ jobs:
       wf: "enterprise_linux/centos_7.wf.json"
       gcs_url: ((.:gcs-url))
       iso: ((iso-paths.centos-7))
-      google_cloud_repo: "stable"
+      google_cloud_repo: "staging"
       build_date: ((.:build-date))
 - name: build-centos-8
   plan:
@@ -221,7 +221,7 @@ jobs:
       wf: "enterprise_linux/centos_8.wf.json"
       gcs_url: ((.:gcs-url))
       iso: ((iso-paths.centos-8))
-      google_cloud_repo: "stable"
+      google_cloud_repo: "staging"
       build_date: ((.:build-date))
 - name: build-centos-stream-8
   plan:
@@ -250,7 +250,7 @@ jobs:
       wf: "enterprise_linux/centos_stream_8.wf.json"
       gcs_url: ((.:gcs-url))
       iso: ((iso-paths.centos-stream-8))
-      google_cloud_repo: "stable"
+      google_cloud_repo: "staging"
       build_date: ((.:build-date))
 # rhel
 - name: build-rhel-7
@@ -280,7 +280,7 @@ jobs:
       wf: "enterprise_linux/rhel_7.wf.json"
       gcs_url: ((.:gcs-url))
       iso: ((iso-paths.rhel-7))
-      google_cloud_repo: "stable"
+      google_cloud_repo: "staging"
       build_date: ((.:build-date))
 - name: build-rhel-8
   plan:
@@ -309,7 +309,7 @@ jobs:
       wf: "enterprise_linux/rhel_8.wf.json"
       gcs_url: ((.:gcs-url))
       iso: ((iso-paths.rhel-8))
-      google_cloud_repo: "stable"
+      google_cloud_repo: "staging"
       build_date: ((.:build-date))
 - name: build-rhel-7-byos
   plan:
@@ -338,7 +338,7 @@ jobs:
       wf: "enterprise_linux/rhel_7_byos.wf.json"
       gcs_url: ((.:gcs-url))
       iso: ((iso-paths.rhel-7))
-      google_cloud_repo: "stable"
+      google_cloud_repo: "staging"
       build_date: ((.:build-date))
 - name: build-rhel-8-byos
   plan:
@@ -367,7 +367,7 @@ jobs:
       wf: "enterprise_linux/rhel_8_byos.wf.json"
       gcs_url: ((.:gcs-url))
       iso: ((iso-paths.rhel-8))
-      google_cloud_repo: "stable"
+      google_cloud_repo: "staging"
       build_date: ((.:build-date))
 - name: build-rhel-7-4-sap
   plan:
@@ -396,7 +396,7 @@ jobs:
       wf: "enterprise_linux/rhel_7_4_sap.wf.json"
       gcs_url: ((.:gcs-url))
       iso: ((iso-paths.rhel-7-4))
-      google_cloud_repo: "stable"
+      google_cloud_repo: "staging"
       build_date: ((.:build-date))
 - name: build-rhel-7-6-sap
   plan:
@@ -425,7 +425,7 @@ jobs:
       wf: "enterprise_linux/rhel_7_6_sap.wf.json"
       gcs_url: ((.:gcs-url))
       iso: ((iso-paths.rhel-7-6))
-      google_cloud_repo: "stable"
+      google_cloud_repo: "staging"
       build_date: ((.:build-date))
 - name: build-rhel-7-7-sap
   plan:
@@ -454,7 +454,7 @@ jobs:
       wf: "enterprise_linux/rhel_7_7_sap.wf.json"
       gcs_url: ((.:gcs-url))
       iso: ((iso-paths.rhel-7-7))
-      google_cloud_repo: "stable"
+      google_cloud_repo: "staging"
       build_date: ((.:build-date))
 - name: build-rhel-8-1-sap
   plan:
@@ -483,7 +483,7 @@ jobs:
       wf: "enterprise_linux/rhel_8_1_sap.wf.json"
       gcs_url: ((.:gcs-url))
       iso: ((iso-paths.rhel-8-1))
-      google_cloud_repo: "stable"
+      google_cloud_repo: "staging"
       build_date: ((.:build-date))
 - name: build-rhel-8-2-sap
   plan:
@@ -512,7 +512,7 @@ jobs:
       wf: "enterprise_linux/rhel_8_2_sap.wf.json"
       gcs_url: ((.:gcs-url))
       iso: ((iso-paths.rhel-8-2))
-      google_cloud_repo: "stable"
+      google_cloud_repo: "staging"
       build_date: ((.:build-date))
 # debian
 - name: build-debian-9
@@ -541,7 +541,7 @@ jobs:
     vars:
       wf: "debian/debian_9.wf.json"
       gcs_url: ((.:gcs-url))
-      google_cloud_repo: "stable"
+      google_cloud_repo: "staging"
       build_date: ((.:build-date))
 - name: build-debian-10
   plan:
@@ -569,7 +569,7 @@ jobs:
     vars:
       wf: "debian/debian_10.wf.json"
       gcs_url: ((.:gcs-url))
-      google_cloud_repo: "stable"
+      google_cloud_repo: "staging"
       build_date: ((.:build-date))
 - name: build-debian-11
   plan:
@@ -597,7 +597,7 @@ jobs:
     vars:
       wf: "debian/debian_11.wf.json"
       gcs_url: ((.:gcs-url))
-      google_cloud_repo: "stable"
+      google_cloud_repo: "staging"
       build_date: ((.:build-date))
 
 # Publish to testing
