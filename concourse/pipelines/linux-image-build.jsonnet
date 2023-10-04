@@ -318,9 +318,7 @@ local imgpublishjob = {
               else [],
             },
             attempts: 3,
-          }
-          // Prod releases use a different final publish step that invokes ARLE.
-          {
+
             task: 'publish-' + tl.image,
             config: arle.arlepublishtask {
               gcs_image_path: tl.gcs,
